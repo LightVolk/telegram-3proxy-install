@@ -34,7 +34,7 @@ touch /usr/local/etc/3proxy/3proxy.pid
 echo "$USERNAME:CL:$PASS" > /usr/local/etc/3proxy/userpass
 echo "socks -i$IP -e$IP -p$PORT" > /usr/local/etc/3proxy/socks.cfg
 
-chown -R 65535:65535 /usr/local/etc/3proxy
+chown -R 65536:65536 /usr/local/etc/3proxy
 
 cp 3proxy.service /lib/systemd/system/
 systemctl enable 3proxy.service
