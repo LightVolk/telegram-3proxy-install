@@ -10,8 +10,8 @@ apt install build-essential dnsutils -y
 
 VERSION="0.8.11"
 IP=($(dig +short myip.opendns.com @resolver1.opendns.com))
-PORT=61555
-USERNAME="user"
+PORT=61556
+USERNAME="user1"
 PASS=$(< /dev/urandom tr -dc 'A-Za-z0-9' | head -c14)
 
 wget https://github.com/z3APA3A/3proxy/archive/$VERSION.tar.gz
